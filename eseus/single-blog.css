@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,800;1,400&amp;family=Nunito:wght@100;200;300;400;500;600;700;800;900&amp;display=swap');
+
+/* -------------------------------------- Global styles ---------------------------------*/
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --main-font: 'Crimson Text', serif;
+    --secondary-font: 'Nunito', sans-serif;
+}
+
+html
+{
+  scroll-behavior: smooth;
+}
+/* -------------------------------------- Global styles ---------------------------------*/
+
+
+/* ---------------------------------------- Single blog-banner --------------------------- */
+.single-blog-banner
+{
+    position: relative;
+    min-height: 70vh;
+    background: url('img/featured-blog2.jpg');
+    background-size: cover;
+    background-position: bottom center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.single-blog-banner::after
+{
+  content: '';
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.3;
+}
+
+.single-blog-heading
+{
+    z-index: 1;
+    width: 100%;
+}
+
+.single-blog-heading h2
+{
+    color: #fff;
+    font-size: 3rem;
+    font-family: var(--secondary-font);
+    font-weight: 600;
+    text-align: center;
+}
+
+.single-blog-heading p
+{
+    color: #fff;
+    font-size: 1rem;
+    font-family: var(--secondary-font);
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 2;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+/* ---------------------------------------- Single blog-banner --------------------------- */
+
+
+/* ------------------------------- Single blog post content ------------------------------ */
+.single-blog-content p
+{
+    color: #111;
+    font-size: 1.1rem;
+    font-family: var(--secondary-font);
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.single-blog-content h2
+{
+    color: #111;
+    font-size: 1.6rem;
+    font-family: var(--secondary-font);
+    line-height: 2;
+    font-weight: 600;
+}
+
+/* ------------------------------- Single blog post content ------------------------------ */
+
+
+/* ------------------------------- Buttons -------------------------------------------- */
+.single-blog-buttons
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px 0 100px;
+    margin-bottom: 50px;
+}
+/* ------------------------------- Buttons -------------------------------------------- */
+
+
+/* ------------------------------- Comment form -------------------------------------------- */
+.comment
+{
+    background-color: #F3F4F7;
+    padding: 50px 100px;
+}
+
+.comment-form
+{
+    background-color: #fff;
+    padding: 70px 100px;
+}
+
+.comment-form h2
+{
+    color: #0097e6;
+    font-size: 3rem;
+    font-family: var(--secondary-font);
+    font-weight: 600;
+}
+
+.comment-form p
+{
+    font-size: 1.1rem;
+    font-family: var(--secondary-font);
+    line-height: 2.5;
+    text-align: justify;
+}
+
+.comment-input-row
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.comment-form form input,
+.comment-form form textarea
+{
+    margin-bottom: 20px;
+    padding: 12px;
+    font-size: 1.2rem;
+    font-family: var(--secondary-font);
+    border: 2px solid #2196f3;
+    outline: none;
+    background: #fff;
+    color: #222;
+    width: 100%;
+}
+
+.comment-form form input
+{
+    width: 32%;
+}
+
+.comment-form form label
+{
+    font-size: 1rem;
+    font-family: var(--secondary-font);
+}
+
+.comment-form form input[type="checkbox"]
+{
+    width: 0;
+}
+
+.comment-submit-btn
+{
+    color: #fff;
+    background-color : #2196f3;
+    border: none;
+    padding: 10px 60px;
+    font-size: 1rem;
+    font-family: var(--secondary-font);
+}
+/* ------------------------------- Comment form -------------------------------------------- */
+
+
+/* ------------------------------- Responsive -------------------------- */
+@media (max-width: 991px)
+{
+    .single-blog-heading h2
+    {
+        font-size: 2rem;
+    }
+
+    .single-blog-heading p
+    {
+        font-size: 0.8rem;
+    }
+
+    .single-blog-content h2
+    {
+        font-size: 1.1rem;
+    }
+
+    iframe
+    {
+        height: auto;
+        width: 100%;
+    }
+
+    .single-blog-buttons
+    {
+        margin: 10px;
+        flex-direction: column;
+    }
+
+    .single-blog-buttons a
+    {
+        padding-top: 10px;
+    }
+
+    .comment
+    {
+        padding: 16px;
+    }
+
+    .comment-form
+    {
+        padding: 10px;
+    }
+
+    .comment-form h2
+    {
+        font-size: 2rem;
+    }
+
+    .comment-form p
+    {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    .comment-form form
+    {
+        margin-top: 10px;
+    }
+
+    .comment-input-row
+    {
+        flex-direction: column;
+    }
+
+    .comment-form form input
+    {
+        width: 100%;
+    }
+
+    .comment-form form label
+    {
+        font-size: 1rem;
+        line-height: 1;
+    }
+
+    .btn-submit
+    {
+        margin-top: 15px;
+    }
+}
+/* ------------------------------- Responsive -------------------------- */

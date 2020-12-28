@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arindam - Personal Portfolio Site</title>
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="img/ESEUS.png"/>
+
+    <!-- External Css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- External Javascript -->
+    <script src="main.js"></script>
+
+    <!-- FontAwesome Icons Library -->
+    <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+
+    <!-- Jquery cdn link -->
+	<script type="text/javascript" src="../cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<!-- Magnific popup -->
+	<script type="text/javascript" src="../cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+	<link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+
+    <!-- Typed JS CDN Link -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+</head>
+<body>
+    <!-- Loading screen starts from here -->
+    <div class="loading-screen">
+        <div class="loading-animation">
+            <img src="img/ESEUS.png" alt="Arindam - Personal Portfolio Site" class="fav-logo">
+            <div class="loading-bar"></div>
+        </div>
+    </div>
+    <!-- Loading screen ends from here -->
+
+    <!-- Header section starts from here -->
+    <header>
+        <a href="#" class="logo">Arindam.</a>
+        <div class="toggle" onclick="toggleMenu()"></div>
+        <ul class="menu">
+            <li><a href="index-2.html" onclick="toggleMenu()">Home</a></li>
+            <li><a href="index-2.html#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="index-2.html#services" onclick="toggleMenu()">Services</a></li>
+            <li><a href="index-2.html#work" onclick="toggleMenu()">Work</a></li>
+          <!--   <li><a href="blog.html" onclick="toggleMenu()">Blog</a></li> -->
+            <li><a href="index-2.html#contact" onclick="toggleMenu()">Contact Me</a></li>
+        </ul>
+    </header>
+    <!-- Header section ends from here -->
+
+    <!-- Hero/Banner section starts from here -->
+    <section class="banner">
+        <div class="textBx">
+            <h2>Hello, I'm<br/> <span>Arindam Bose.</span></h2>
+            <h6>And I'm a <span class="typing"></span></h6>
+            <a href="#about">
+                <button class="btn btn-about"> About Me </button>
+            </a>
+        </div>
+    </section>
+    <!-- Hero/Banner section ends from here -->
+
+    <!-- About Section starts from here -->
+    <section class="about" id="about">
+        <h2 class="heading">About Me.</h2>
+        <div class="about-content">
+            <div class="content-side">  
+                <h3>I'm a <span class="about-typing"></span></h3>
+                <p>
+                    I'm a Creative Web Designer/Developer and Open-Source Enthusiast. 
+                    I have learned programming from online platforms like Udemy & Coursera 
+                    and also contributed free source code 
+                    on Codepen and GitHub, moreover I have dirtied my hands with coding at 
+                    numerous projects. I always like to create something on my own 
+                    which looks Great and feels Awesome. Find out some examples here on my site. 
+                    I have started my journey in this field for decent amount of time so 
+                    it would be great if i get a chance to prove 
+                    myself to provide you with better quality output.  
+                </p>
+                <br/>
+                <p>
+                    I joined the Department of Computer Science and Engineering at 
+                    Chandigarh University, where I am currently pursuing several other courses like Databases 
+                    with MySQL Embedded Microprocessors, Graphics, Human-Computer Interaction, 
+                    Object Oriented Programming with Java, Web Development. 
+                    Finishing my studies in 2023, where I'll receive my Bachelor's Degree.
+                    ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                    ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                    ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                    ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                </p>
+                <div class="button-social-link-area">
+                    <div class="button-area">
+                        <a href="#" target="_blank">
+                            <button class="btn btn-resume"> Download Resume </button>
+                        </a>
+                    </div>
+
+                    <div class="social-area">
+                        <a href="https://www.facebook.com/">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://twitter.com/">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/a4arindam_/">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://github.com/eseus-coder">
+                            <i class="fab fa-github"></i>
+                        </a> 
+                        <a href="https://www.linkedin.com/in/arindam-bose-4a0115200/">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="image-side">
+                <img src="img/me.jpg" class="my-img" alt="Atul Prajapati" title="Atul Prajapati">
+            </div>
+        </div>
+    </section>
+    <!-- About Section ends from here -->
+
+    <!-- Services section starts from here -->
+    <section class="services" id="services">
+        <h2 class="heading service-heading"> What i Do. </h2>
+        <p>and what I'm learning.</p>
+
+        <div class="service-contents">
+            <div class="service-content">
+                <div class="service-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h3>Web Design</h3>
+                <p></p>
+            </div>
+            <div class="service-content">
+                <div class="service-icon">
+                    <i class="fas fa-globe"></i>
+                </div>
+                <h3>Web Development</h3>
+                <p></p>
+            </div>
+            <div class="service-content">
+                <div class="service-icon">
+                    <i class="fas fa-funnel-dollar"></i>
+                </div>
+                <h3>Digital Marketing</h3>
+                <p></p>
+            </div>
+            <div class="service-content">
+                <div class="service-icon">
+                    <i class="fas fa-server"></i>
+                </div>
+                <h3>Devops(Ongoing)</h3>
+                <p></p>
+            </div>
+            <div class="service-content">
+                <div class="service-icon">
+                    <i class="fab fa-app-store-ios"></i>
+                </div>
+                <h3>App Development(Ongoing)</h3>
+                <p></p>
+            </div>
+            <div class="service-content">
+                <div class="service-icon">
+                    <i class="fab fa-cloudsmith"></i>
+                </div>
+                <h3>AI/ML(Ongoing)</h3>
+                <p></p>
+            </div>
+        </div>
+        <div class="col-six tab-full">
+        <p>  ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+        ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+        ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+        ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+        ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+        ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+        ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+        ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+        ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+        ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+        </p>
+            <h2 class="heading service-heading">Skills i have.</h2>
+            <p>and what I'm honing.</p>
+
+            <ul class="skill-bars">
+                <li>
+                    <div class="progress percent90"><span>90%</span></div>
+                    <strong>CSS3</strong>
+                </li>
+                <li>
+                    <div class="progress percent50"><span>50%</span></div>
+                    <strong>Python</strong>
+                </li>
+                <li>
+                    <div class="progress percent60"><span>60%</span></div>
+                    <strong>C++/JAVA</strong>
+                </li>
+                <li>
+                    <div class="progress percent95"><span>95%</span></div>
+                    <strong>HTML5</strong>
+                </li>
+                <li>
+
+                    <div class="progress percent75"><span>75%</span></div>
+                    <strong>Wordpress</strong>
+                </li>
+
+            </ul> <!-- /skill-bars -->
+
+            </div>
+    </section>
+    <!-- Services section ends from here -->
+
+    <!-- My work section starts from here -->
+    <section class="work" id="work">
+        <h2 class="heading service-heading"> Recent Ongoing Works. </h2>
+        <p>I take a tremendous amount of pride in the the work I do.</p>
+
+        <div class="work-section">
+            <div class="inner-width">    
+                <div class="work">
+                    <a href="img/work1.png" class="image">
+                        <img src="img/work1.png" alt="Work 8">
+                    </a>
+    
+                    <a href="img/work2.png" class="image">
+                        <img src="img/work2.png" alt="Work 1">
+                    </a>
+    
+                    <a href="img/work3.png" class="image">
+                        <img src="img/work3.png" alt="Work 2">
+                    </a>
+    
+                    <a href="img/work4.png" class="image">
+                        <img src="img/work4.png" alt="Work 3">
+                    </a>
+    
+                    <a href="img/work5.png" class="image">
+                        <img src="img/work5.png" alt="Work 4">
+                    </a>
+    
+                    <a href="img/work6.png" class="image">
+                        <img src="img/work6.png" alt="Work 5">
+                    </a>
+    
+                    <a href="img/work7.png" class="image">
+                        <img src="img/work7.png" alt="Work 6">
+                    </a>
+    
+                    <a href="img/work8.png" class="image">
+                        <img src="img/work8.png" alt="Work 7">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- My work section ends from here -->
+
+    <!-- Testimonial section starts from here -->
+ <!--   <section class="testimonial" id="testimonial">
+        <h2 class="heading service-heading"> Client Say's. </h2>
+        <p>My client's testimonials speak loud for my services.</p>
+
+        <div class="testimonial-content">
+            <div class="testimonial-row">
+                <div class="testimonial-col">
+                    <div class="testimonial-card">
+                        <img src="img/client1.jpg" alt="Atul Prajapati client testimonial 1">
+                        <div class="name">Julia Gao Miller</div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>
+                            Excellent work. Pleased with Atul and his team's ability to deliver exactly as he said he would. They have lots of experience with WordPress and was able...
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="testimonial-col">
+                    <div class="testimonial-card">
+                        <img src="img/Client2.jpg" alt="Atul Prajapati client testimonial 2">
+                        <div class="name">John Waddrob</div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p>
+                            High level of programming skills, Amazing job done! Excellent Work! Delivered well in time, great guy to work with as he's very understanding.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="testimonial-col">
+                    <div class="testimonial-card">
+                        <img src="img/Client3.jpg" alt="Atul Prajapati client testimonial 3">
+                        <div class="name">Milly Berst</div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>
+                            Such a great professional to deal with. Atul Prajapati was really keen good to complete his work Easy to communicate with and very trustworthy and fast...
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- Testimonial section ends from here -->
+
+    <!-- Contact section starts from here -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact Me.</h2>
+        <p>Let's discuss in detail for better tommorow.</p>
+
+        <div class="contact-content">
+            <div class="contact-info">
+                <div class="contact-info-bx">
+                    <h3>Contact Info</h3>
+                    <div class="box">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Address</h3>
+                            <p>Chandigarh,<br/> India.</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Discord</h3>
+                            <p></p>
+                            <a href = "https://discord.com/login/" target = "_self">eseus#4822</a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="contact-icon">
+                            <i class="far fa-envelope"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Email</h3>
+                            <p>arindambose975@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-bx">
+                    <form method="post" action="https://atul-image.netlify.app/contactengine.php">
+                        <h3>Message Me</h3>
+                        <input type="text" name="Name" id="Name" placeholder="Enter Name" required>
+                        <input type="email" name="Email" id="Email" placeholder="Enter Email" required>
+                        <textarea name="Message" id="Message" placeholder="Your Message"></textarea>
+                        <input type="submit" name="submit" value="Send Now" class="submit-button">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact section ends from here -->
+
+    <!-- Copyright section starts from here -->
+    <div class="copyright">
+        <p>Copyright © 2020 Arindam Bose. All Rights Reserved.</p>
+    </div>
+    <!-- Copyright section ends from here -->
+
+    <!-- Back to top button starts from here -->
+    <a href="#" class="to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+    <!-- Back to top button ends from here -->
+        
+    <script>
+        // Loading screen starts from here
+        let loadingScreen = document.querySelector('.loading-screen');
+
+        window.addEventListener('load', function()
+        {
+            loadingScreen.style.display = 'none';
+        });
+        // Loading screen ends from here
+
+        // Magnific popup code starts from here
+        $(".work").magnificPopup({
+            delegate: 'a',
+            type: 'image',
+            work:{
+                enabled: true
+            }
+        });
+        // Magnific popup code ends from here
+
+        // Typed Js code starts from here
+        var typed = new Typed('.typing', {
+            strings: [
+                "FrontEnd Developer.",
+                "Open-Source Enthusiast.",
+                "UI/UX Designer."
+            ],
+            typeSpeed: 80,
+            backSpeed: 40,
+            // startDelay: 120,
+            loop: true
+        });
+
+        var typed = new Typed('.about-typing', {
+            strings: [
+                "FrontEnd Developer.",
+                "Open-Source Enthusiast.",
+                "UI/UX Designer."
+            ],
+            typeSpeed: 80,
+            backSpeed: 40,
+            // startDelay: 120,
+            loop: true
+        });
+        // Typed Js code ends from here
+
+        // Scroll to top button js code starts from here
+        const toTop = document.querySelector(".to-top");
+
+        window.addEventListener("scroll", () => {
+            if(window.pageYOffset > 100)
+            {
+                toTop.classList.add("active");
+            }
+            else
+            {
+                toTop.classList.remove("active");
+            }
+        })
+        // Scroll to top button code ends from here
+    </script>
+</body>
+
+
+</html>
